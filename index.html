@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="inicio">app web</h1>
+        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nisi, labore temporibus ad
+            obcaecati illo
+            quos dolores consequatur nostrum? Consectetur suscipit aliquid explicabo modi sed, optio qui atque?
+            Mollitia, provident. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, neque odit. Iure quasi
+            molestiae odio, repellendus, dicta itaque error voluptatum eius nostrum, tenetur numquam odit placeat sequi.
+            Quaerat, molestiae non.</p>
+        <div>
+            <img src="img/bx-.svg" alt="" class="hamburguer" />
+        </div>
+
+        <nav class="menu-navegacion">
+            <a href="#inicio">inicio</a>
+            <a href="#carrusel">carrusel</a>
+            <a href="#galeria">galeria</a>
+            <a href="#contactos">formulario</a>
+        </nav>
+
+    </header>
+
+    <!--carrusel-->
+    <section class="carrusel01">
+        <h2 id="carrusel">carrusel</h2>
+        <div id="contecarrusel">
+            <div class="carrusel" id="carrusel-1">
+
+
+                <div class="targetadecarrusel" id="tagetacarrusel-1">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <div class="flechas">
+                    <a href="#carrusel-3">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#carrusel-2">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+            </div>
+            <div class="carrusel" id="carrusel-2">
+
+
+                <div class="targetadecarrusel" id="targetacarrusel-2">
+                    <img src="img/2.jpg" alt="">
+                </div>
+                <div class="flechas">
+                    <a href="#carrusel-1">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#carrusel-3">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="carrusel" id="carrusel-3">
+
+
+                <div class="targetadecarrusel" id="tagetacarrusel-3">
+                    <img src="img/4.jpg" alt="">
+                </div>
+                <div class="flechas">
+                    <a href="#carrusel-2">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#carrusel-1">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="contepuntos">
+            <a href="#carrusel-1"><i class="fa-solid fa-circle"></i></a>
+            <a href="#carrusel-2"><i class="fa-solid fa-circle"></i></a>
+            <a href="#carrusel-3"><i class="fa-solid fa-circle"></i></a>
+        </div>
+        <!--fin de carrusel-->
+    </section>
+
+    <!--galeria-->
+
+
+    <section class="gallery" id="galeria">
+        <div class="contador">
+            <h2 class="subtitulo">galeria</h2>
+            <div class="contenedor-galeria">
+                <img src="img/1.jpg" alt="" class="img-galeria">
+                <img src="img/2.jpg" alt="" class="img-galeria">
+                <img src="img/3.jpg" alt="" class="img-galeria">
+                <img src="img/4.jpg" alt="" class="img-galeria">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="imagen-Light">
+        <img src="img/x.svg" alt="" class="close">
+        <img src="img/2.jpg" alt="" class="agregar-imagen">
+    </section>
+
+    <!--fin galeria-->
+
+    <!--formularios-->
+    <section class="centro">
+        <form id="form" >
+            <div class="field">
+                <label for="name">name</label>
+                <input type="text" name="name" id="name" class="input">
+            </div>
+            <div class="field">
+                <label for="time">time</label>
+                <input type="text" name="time" id="time" class="input">
+            </div>
+            <div class="field">
+                <label for="message">message</label>
+                <input type="text" name="message" id="message" class="input">
+            </div>
+            <div class="field">
+                <label for="email">email</label>
+                <input type="text" name="email" id="email" class="input">
+            </div>
+
+            <input type="submit" id="button" value="Send Email">
+        </form>
+    </section>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('xZdJst3OEGRYHvg23')
+    </script>
+
+    <!--formulario-->
+
+
+
+    <script src="https://kit.fontawesome.com/4a28003174.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4a28003174.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
